@@ -1,6 +1,6 @@
 # Building a dev ops toolchain on IBM Cloud
 
-These steps will guide you through creating a toolchain that monitors a source repository, and builds and redeploys a Cloud Foundry application on every code commit. Utilizing DevOp tool integrations, and configuring a delivery pipeline to automatically build and deploy Cloud Foundry applications to IBM Cloud, you can focus on your application's code.
+These steps will guide you through creating a toolchain that monitors a source repository, and builds and redeploys a Cloud Foundry application on every code commit. Utilizing DevOp tool integrations, and configuring a delivery pipeline to automatically build and deploy Cloud Foundry applications to IBM Cloud, you can focus on your application's code and not pushing the latest changes to production.
 
 
 
