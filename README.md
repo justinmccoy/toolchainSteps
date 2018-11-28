@@ -2,9 +2,11 @@
 
 These steps will guide you through creating a toolchain that monitors a source repository, and builds and redeploys a Cloud Foundry application on every code commit. Utilizing DevOp tool integrations, and configuring a delivery pipeline to automatically build and deploy Cloud Foundry applications to IBM Cloud, you can focus on your application's code and not pushing the latest changes to production.
 
+## 0.Resources
+* [IBM Cloud Starter Kits](https://console.bluemix.net/developer/appservice/starter-kits/)
 
 
-## 1. Use existing Git Repository
+## 1.Use existing Git Repository
 This guide assumes you have a GitLab project repository created for your team. For example: https://git.ng.bluemix.net/justin.mccoy/jam-toolchain-demo.git
 
 ![](docs/images/gitlab_overview.png)
@@ -35,7 +37,7 @@ This guide assumes you have a GitLab project repository created for your team. F
 
 5. Copy and save your *gitlab access token* to a text document; we will need it later. Once you leave the page you can't retrieve it again.
 
-## Creating a toolchain
+## 2.Creating a toolchain
 
 In this section we will set up a DevOps Toolchain which will allow us to integrate our git repo with different tools including a delivery pipeline. From your IBM Cloud Dashboard [https://console.bluemix.net](https://console.bluemix.net) ensure you're using the Wells Fargo Account.
 
@@ -78,7 +80,7 @@ _Click on your account in the upper right corner and select **Wells Fargo**_
 
 ![](docs/images/toolchain_setup.png)
 
-## Creating the delivery pipeline
+## 3.Creating the delivery pipeline
 
 In this section we will configure an automated delivery pipeline that will detect changes pushed to the GitLab source code repository, build any dependencies, and deploy to IBM cloud.
 
@@ -109,7 +111,7 @@ In this section we will configure an automated delivery pipeline that will detec
 11. Ensure the *Organization* is **TeamworksNG**
 12. Click **Save**
 
-## Sample Projects
+## 4.Sample Projects
 Download code from one of these sample Cloud Foundry Projects as a base for your project:
 
 * **Node.js** [Hello World Web App](https://github.com/IBM-Cloud/node-helloworld)
@@ -120,7 +122,8 @@ Download code from one of these sample Cloud Foundry Projects as a base for your
 * **Swift** [Hello World Web App](https://github.com/IBM-Cloud/swift-helloworld)
 * **Ruby on Rails** [Hello World Web App](https://github.com/IBM-Cloud/ruby-rails-helloworld)
 
-## Deploying changes
+
+## 5.Deploying changes
 
 In this final section, we will test our delivery pipeline by pushing code changes. We will show how to push the code both locally through the git cli, and through the browser with the Orion Web IDE. 
 
