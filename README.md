@@ -5,7 +5,7 @@ These steps will guide you through creating a toolchain that monitors a source r
 
 
 ## 1. Use existing Git Repository
-This guide assumes you have a GitLab project repository created for your team. For example: https://git.ng.bluemix.net/TeamworksNG/ibm.git
+This guide assumes you have a GitLab project repository created for your team. For example: https://git.ng.bluemix.net/justin.mccoy/jam-toolchain-demo.git
 
 ![](docs/images/gitlab_overview.png)
 
@@ -19,7 +19,7 @@ This guide assumes you have a GitLab project repository created for your team. F
 5. Click on the **ssh** dropdown and select **https**
 6. Copy the git repo address and save for later
 
-### Creating an access token 
+### Creating a GitLab access token 
 1. Click on the drop down at the very top right of page and select **Settings**
 
 ![](docs/images/gitlab_settings.png)
@@ -33,7 +33,7 @@ This guide assumes you have a GitLab project repository created for your team. F
 
 ![](docs/images/gitlab_create_accesstoken.png)
 
-5. Copy and save your access token to a text document; we will need it later. Once you leave the page you can't retrieve it again.
+5. Copy and save your *gitlab access token* to a text document; we will need it later. Once you leave the page you can't retrieve it again.
 
 ## Creating a toolchain
 
@@ -109,13 +109,26 @@ In this section we will configure an automated delivery pipeline that will detec
 11. Ensure the *Organization* is **TeamworksNG**
 12. Click **Save**
 
+## Sample Projects
+Download code from one of these sample Cloud Foundry Projects as a base for your project:
+
+* **Node.js** [Hello World Web App](https://github.com/IBM-Cloud/node-helloworld)
+* **Python Flask** [Hello World App]()
+* **Python Django** [Hello World App]()
+* **ASP.NET Core** [Hello World App](https://github.com/IBM-Cloud/aspnet-core-helloworld)
+* **Golang** [Hello World Web App](https://github.com/IBM-Cloud/go-hello-world)
+* **Java JAX_RS** [Hello World Web App](https://github.com/IBM-Cloud/java-web-service)
+* **Java Liberty** [Hello World Web App](https://github.com/IBM-Cloud/java-helloworld)
+* **Swift** [Hello World Web App](https://github.com/IBM-Cloud/swift-helloworld)
+* **Ruby on Rails** [Hello World Web App](https://github.com/IBM-Cloud/ruby-rails-helloworld)
+
 ## Deploying changes
 
-In this final section, we will test our delivery pipeline by pushing code changes. We will show how to push the code both locally through the `git cli` and through the browser with the Orion Web IDE. 
+In this final section, we will test our delivery pipeline by pushing code changes. We will show how to push the code both locally through the git cli, and through the browser with the Orion Web IDE. 
 
 ### If developing locally
 
-1. In your termainal, navigate to where you want to clone your project and enter the following command, replacing "token" and "giturl" with your actual access token and git url from the first section. Your git url should start with git.ng.bluemix.net/... and end in .git
+1. In your termainal, navigate to where you want to clone your project and enter the following command, replacing "token" and "giturl" with your actual *gitlab access token* and git url from the first section. Your git url should start with git.ng.bluemix.net/... and end in .git
 
 ```
 git clone https://oauth2:token@giturl
@@ -127,16 +140,20 @@ git clone https://oauth:zg1rdrYj7_yjracBYcE_@git.ng.bluemix.net/justin.mccoy/jam
 ```
 
 2. Make your code changes
-3. Add, commit, and push your code like you normally would using the `git cli`
+3. Add, commit, and push your code like you normally would using the git cli
 4. The pipeline should kick off automatically
 
 ### If developing in the browser
-
+####
+Orion Web IDE 
 1. Go back to your toolchain page that shows the integrations you have selected.
 
 ![](docs/images/toolchain.png)
 
 2. Click on the **Eclipse Orion Web IDE** integration
+
+![](docs/images/orion.png)
+
 3. In the file explorer, expand your project to see all the files
 4. Make your code changes
 5. When done making changes, click on the git icon that is under the pencil on the very left side of the page.
