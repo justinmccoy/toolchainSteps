@@ -117,7 +117,6 @@ Download code from one of these sample Cloud Foundry Projects as a base for your
 * **Python Django** [Hello World App]()
 * **ASP.NET Core** [Hello World App](https://github.com/IBM-Cloud/aspnet-core-helloworld)
 * **Golang** [Hello World Web App](https://github.com/IBM-Cloud/go-hello-world)
-* **Java JAX_RS** [Hello World Web App](https://github.com/IBM-Cloud/java-web-service)
 * **Java Liberty** [Hello World Web App](https://github.com/IBM-Cloud/java-helloworld)
 * **Swift** [Hello World Web App](https://github.com/IBM-Cloud/swift-helloworld)
 * **Ruby on Rails** [Hello World Web App](https://github.com/IBM-Cloud/ruby-rails-helloworld)
