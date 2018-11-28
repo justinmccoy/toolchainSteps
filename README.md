@@ -113,11 +113,10 @@ In this section we will configure an automated delivery pipeline that will detec
 Download code from one of these sample Cloud Foundry Projects as a base for your project:
 
 * **Node.js** [Hello World Web App](https://github.com/IBM-Cloud/node-helloworld)
-* **Python Flask** [Hello World App]()
-* **Python Django** [Hello World App]()
+* **Python Flask** [Hello World App](https://github.com/IBM-Cloud/get-started-python)
+* **PHP** [Hello World App](https://github.com/IBM-Cloud/get-started-php)
 * **ASP.NET Core** [Hello World App](https://github.com/IBM-Cloud/aspnet-core-helloworld)
 * **Golang** [Hello World Web App](https://github.com/IBM-Cloud/go-hello-world)
-* **Java Liberty** [Hello World Web App](https://github.com/IBM-Cloud/java-helloworld)
 * **Swift** [Hello World Web App](https://github.com/IBM-Cloud/swift-helloworld)
 * **Ruby on Rails** [Hello World Web App](https://github.com/IBM-Cloud/ruby-rails-helloworld)
 
